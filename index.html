@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body>
+<body class="">
     <nav class="bg-deepBlue">
         <!-- logo -->
         <div class="relative w-[1080px] flex mx-auto items-center justify-between">
@@ -68,27 +68,28 @@
     </nav>
     <!-- hero-section -->
     <section class="relative bg-deepBlue ">
-        <div class="w-10/12 flex flex-row justify-between items-center mx-auto ">
+        <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto ">
             <!-- left-part -->
-            <div class="flex flex-col gap-4">
-                <h1 class="text-white font-mullish text-[40px] leading-[1.2]">
+            <div class="space-y-8">
+                <h1 class="text-white font-bold font-mullish text-[40px] leading-[1.2]">
                     Power your finance, grow your business
                 </h1>
                 <div class="w-6 h-1 bg-greenLight">
 
                 </div>
-                <p>
+                <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
                     Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.
                 </p>
-                <button>
-                    Sign Up Now
+                <button class= "flex bg-lightBlue py-[14px] px-[18px] text-white rounded-md font-mullish font-bold hover:bg-lightblue500 transition-all duration-200 ">
+                    <div class="">Sign Up Now</div>
+                    <svg  viewBox="0 0 24 24" focusable="false" class=" m-[3px] w-[17px] h-[20px]" data-testid="right-icon"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
                 </button>
             </div> 
             <!-- right part  -->
-            <img src="./images/hero-illustration.jpg" alt="Hero section Image">
+            <img src="./images/hero-illustration.jpg" alt="Hero section Image" class=" width-full max-w-[680px]">
         </div>
-        <div>
-            <img src="./images/hero-shape.svg" alt="">
+        <div class="absolute left-0 right-0 w-[100.028%]">
+            <img src="./images/hero-shape.svg" alt="" class="w-full object-fill scale-x-100">
         </div>
     </section>
 </body>
